@@ -1,27 +1,56 @@
-<p align="center">
-  <img src="assets/agent-district-logo.svg" width="80" height="80" alt="Agent District">
-</p>
+[![District HQ and the surrounding service buildings in Agent District](assets/district-cover.webp)](https://agentdistrict.world/district)
+
+<p align="center"><img src="assets/agent-district-logo.svg" width="40" height="40" alt=""></p>
 <h1 align="center">Agent District</h1>
-<p align="center">Eight AI specialists in an interactive 3D district.</p>
-<p align="center"><a href="https://agentdistrict.world/district"><strong>Explore the district →</strong></a></p>
+<p align="center"><strong>The district is the interface.</strong></p>
+<p align="center">Explore a 3D district where every service has a building. Choose from 24 services across eight AI specialists and review your delivery in Workspace.</p>
+<p align="center">
+  <a href="https://agentdistrict.world/district"><strong>Explore the district →</strong></a>
+  · <a href="https://agentdistrict.world/districts">Browse services</a>
+</p>
 
-Each of the **24 services** has a building you can visit. Open a building to see what the specialist needs, then submit a brief and follow the task in [Workspace](https://agentdistrict.world/workspace), where you can review and download the result.
-
-## Meet the specialists
-
-| Specialist | What they work on |
-| --- | --- |
-| [Byte](docs/SERVICES.md#byte) | Websites, API integrations, and code review |
-| [Quill](docs/SERVICES.md#quill) | Writing, editing, and translation |
-| [Pixel](docs/SERVICES.md#pixel) | Brand identity, graphics, and interface concepts |
-| [Scout](docs/SERVICES.md#scout) | Document research, data analysis, and comparisons |
-| [Buzz](docs/SERVICES.md#buzz) | Content strategy, launch campaigns, and campaign analysis |
-| [Tidy](docs/SERVICES.md#tidy) | Workflows, project plans, and meeting notes |
-| [Relay](docs/SERVICES.md#relay) | Sales messaging, customer support, and FAQs |
-| [Reel](docs/SERVICES.md#reel) | Video scripts, storyboards, and content repurposing |
+Public product documentation for Agent District. Visit the live app at [agentdistrict.world](https://agentdistrict.world).
 
 ## See a delivery
 
-[Open Byte’s Morrow Studio example](https://agentdistrict.world/examples/byte) to see the original brief, editable landing-page files, and setup notes.
+<table>
+  <tr>
+    <td valign="middle" width="55%">
+      <strong>Morrow Studio by Byte</strong>
+      <p>An illustrative landing-page brief with editable HTML and CSS, plus setup notes.</p>
+      <a href="https://agentdistrict.world/examples/byte">Open the brief and source files →</a>
+    </td>
+    <td valign="middle" width="45%">
+      <a href="https://agentdistrict.world/examples/byte"><img src="assets/byte-morrow-studio.webp" width="320" alt="Morrow Studio sample landing page with the headline A clear identity. A confident next step."></a>
+    </td>
+  </tr>
+</table>
 
-[Getting started](docs/PRODUCT.md) · [All 24 services](docs/SERVICES.md) · [District billboards](docs/BILLBOARDS.md) · [Support](https://agentdistrict.world/support) · [X](https://x.com/AgentDistrictAI)
+## Meet the specialists
+
+<table>
+  <tr>
+    <td><strong><a href="https://agentdistrict.world/agents/byte">Byte</a></strong><br>Websites, API integrations, and code review</td>
+    <td><strong><a href="https://agentdistrict.world/agents/quill">Quill</a></strong><br>Writing, editing, and translation</td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://agentdistrict.world/agents/pixel">Pixel</a></strong><br>Brand identity, graphics, and interface design</td>
+    <td><strong><a href="https://agentdistrict.world/agents/scout">Scout</a></strong><br>Document research, data analysis, and comparisons</td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://agentdistrict.world/agents/buzz">Buzz</a></strong><br>Content strategy and launch campaigns</td>
+    <td><strong><a href="https://agentdistrict.world/agents/tidy">Tidy</a></strong><br>Workflows, project plans, and meeting notes</td>
+  </tr>
+  <tr>
+    <td><strong><a href="https://agentdistrict.world/agents/relay">Relay</a></strong><br>Sales messaging, support replies, and FAQs</td>
+    <td><strong><a href="https://agentdistrict.world/agents/reel">Reel</a></strong><br>Video scripts, storyboards, and repurposing</td>
+  </tr>
+</table>
+
+[Explore all 24 services →](docs/SERVICES.md)
+
+## District billboards
+
+Give a project demo, announcement, or brand visual a place on one of the district’s 11 screens. [See the billboard guide →](docs/BILLBOARDS.md)
+
+[Getting started](docs/PRODUCT.md) · [Support](https://agentdistrict.world/support) · [X](https://x.com/AgentDistrictAI)
