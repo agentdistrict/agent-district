@@ -1,0 +1,49 @@
+name: Documentation links
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.md'
+      - 'assets/**'
+      - '.github/workflows/link-check.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - '**.md'
+      - 'assets/**'
+      - '.github/workflows/link-check.yml'
+  schedule:
+    - cron: '23 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-links:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Check out documentation
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Check relative paths and Markdown anchors
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          lycheeVersion: v0.24.2
+          token: ''
+          fail: true
+          args: >-
+            --offline --no-progress --include-fragments=anchor-only
+            './*.md' './docs/**/*.md'
+
+      - name: Check public Agent District URLs
+        run: |
+          # Restrict network checks to the product site. Service anchors are rendered client-side.
+          lychee --no-progress --scheme https --exclude-all-private \
+            --exclude '.*' --include '^https://agentdistrict\.world([/?#]|$)' \
+            --timeout 15 --max-retries 3 --retry-wait-time 2 --max-concurrency 4 \
+            './*.md' './docs/**/*.md'
